@@ -1,0 +1,37 @@
++ umask 022
++ cd /home/ashand01/rpmbuild/BUILD
++ '[' /home/ashand01/rpmbuild/BUILDROOT/check_ali_plugin-1.0-1.el7.centos.x86_64 '!=' / ']'
++ rm -rf /home/ashand01/rpmbuild/BUILDROOT/check_ali_plugin-1.0-1.el7.centos.x86_64
+++ dirname /home/ashand01/rpmbuild/BUILDROOT/check_ali_plugin-1.0-1.el7.centos.x86_64
++ mkdir -p /home/ashand01/rpmbuild/BUILDROOT
++ mkdir /home/ashand01/rpmbuild/BUILDROOT/check_ali_plugin-1.0-1.el7.centos.x86_64
++ cd check_ali_plugin-1.0
++ rm -rf /home/ashand01/rpmbuild/BUILDROOT/check_ali_plugin-1.0-1.el7.centos.x86_64
++ mkdir -p /home/ashand01/rpmbuild/BUILDROOT/check_ali_plugin-1.0-1.el7.centos.x86_64/usr/lib64/nagios/plugins
++ install -m 0755 check_ali_plugin /home/ashand01/rpmbuild/BUILDROOT/check_ali_plugin-1.0-1.el7.centos.x86_64/usr/lib64/nagios/plugins/check_ali_plugin
++ /usr/lib/rpm/find-debuginfo.sh --strict-build-id -m --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 /home/ashand01/rpmbuild/BUILD/check_ali_plugin-1.0
+/usr/lib/rpm/sepdebugcrcfix: Updated 0 CRC32s, 0 CRC32s did match.
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/rpm/redhat/brp-compress
++ /usr/lib/rpm/redhat/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1
++ /usr/lib/rpm/redhat/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-java-repack-jars
+Processing files: check_ali_plugin-1.0-1.el7.centos.x86_64
+Provides: check_ali_plugin = 1.0-1.el7.centos check_ali_plugin(x86-64) = 1.0-1.el7.centos
+Requires(interp): /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(post): /bin/sh
+Requires: /bin/bash
+Processing files: check_ali_plugin-debuginfo-1.0-1.el7.centos.x86_64
+Provides: check_ali_plugin-debuginfo = 1.0-1.el7.centos check_ali_plugin-debuginfo(x86-64) = 1.0-1.el7.centos
+Requires(rpmlib): rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1 rpmlib(CompressedFileNames) <= 3.0.4-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/ashand01/rpmbuild/BUILDROOT/check_ali_plugin-1.0-1.el7.centos.x86_64
+Wrote: /home/ashand01/rpmbuild/RPMS/x86_64/check_ali_plugin-1.0-1.el7.centos.x86_64.rpm
+Wrote: /home/ashand01/rpmbuild/RPMS/x86_64/check_ali_plugin-debuginfo-1.0-1.el7.centos.x86_64.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.FPZ6Us
++ umask 022
++ cd /home/ashand01/rpmbuild/BUILD
++ cd check_ali_plugin-1.0
++ rm -rf /home/ashand01/rpmbuild/BUILDROOT/check_ali_plugin-1.0-1.el7.centos.x86_64
++ exit 0
